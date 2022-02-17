@@ -39,6 +39,7 @@ namespace BethanysPieShopHRM.UI
             services.AddScoped<ITaskDataService, TaskDataService>();
             services.AddScoped<IEmailService, EmailService>();
             services.AddScoped<ISurveyDataService, SurveyDataService>();
+            services.AddTransient<IExpenseApprovalService, ExpenseApprovalService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
