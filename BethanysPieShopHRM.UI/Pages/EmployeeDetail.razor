@@ -1,6 +1,7 @@
 ﻿
-@page "/employeedetail/{EmployeeId}"
+@page "/employeedetail/{EmployeeId:int}"
 @inherits EmployeeDetailBase
+
 
 <section class="employee-detail">
     <h1 class="page-title">Details for @Employee.FirstName @Employee.LastName</h1>
