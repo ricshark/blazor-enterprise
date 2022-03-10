@@ -15,13 +15,13 @@ namespace BethanysPieShopHRM.Shared
         [Required]
         public string LastName { get; set; }
 
-        [BirthdayValidator(MinimumAge = 18)]
+        //[BirthdayValidator(MinimumAge = 18)]
         public DateTime BirthDate { get; set; }
         
-        [ValidateComplexType]
+        //[ValidateComplexType]
         public Address Address { get; set; }
 
-        [ValidateComplexType]
+        //[ValidateComplexType]
         public Contact Contact { get; set; }
         public bool Smoker { get; set; }
         public bool IsOPEX { get; set; }

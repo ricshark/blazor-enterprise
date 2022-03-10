@@ -9,15 +9,15 @@ namespace BethanysPieShopHRM.Shared
     {
         public int ContactId { get; set;}
 
-        [Required]
-        [EmailAddress]
+        //[Required]
+        //[EmailAddress]
         public string PersonalEmail { get; set; }
 
-        [Required]
-        [EmailAddress]
+        //[Required]
+        //[EmailAddress]
         public string CompanyEmail { get; set; }
 
-        [Required]
+        //[Required]
         public string PhoneNumber { get; set; }
 
         public string EmergencyPhoneNumber { get; set; }

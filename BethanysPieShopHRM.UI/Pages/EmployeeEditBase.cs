@@ -38,7 +38,7 @@ namespace BethanysPieShopHRM.UI.Pages
         public Employee Employee { get; set; } = new Employee {
             Address = new Address(),
             Contact = new Contact(),
-            JobCategoryId = 1, BirthDate = DateTime.Now, JoinedDate = DateTime.Now 
+            JobCategoryId = 1, BirthDate = new DateTime(1979, 1, 16), JoinedDate = DateTime.Now 
         };
 
         //used to store state of screen

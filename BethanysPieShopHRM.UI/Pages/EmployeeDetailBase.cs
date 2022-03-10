@@ -4,6 +4,7 @@ using BethanysPieShopHRM.ComponentsLibrary.Map;
 using BethanysPieShopHRM.UI.Services;
 using BethanysPieShopHRM.Shared;
 using Microsoft.AspNetCore.Components;
+using System;
 
 namespace BethanysPieShopHRM.UI.Pages
 {
@@ -22,7 +23,14 @@ namespace BethanysPieShopHRM.UI.Pages
 
         protected string JobCategory = string.Empty;
 
-        public Employee Employee { get; set; } = new Employee() { Address = new Address(), Contact = new Contact() };
+        public Employee Employee { get; set; } = new Employee
+        {
+            Address = new Address(),
+            Contact = new Contact(),
+            JobCategoryId = 1,
+            BirthDate = new DateTime(1979, 1, 16),
+            JoinedDate = DateTime.Now
+        };
 
         protected override async Task OnInitializedAsync()
         {

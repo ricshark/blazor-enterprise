@@ -8,15 +8,15 @@ namespace BethanysPieShopHRM.Shared
     public class Address : IValidatableObject
     {
         public int AddressId { get; set; }
-        [Required]
+        //[Required]
         public string Street { get; set; }
-        [Required]
+        //[Required]
         public string Zip { get; set; }
-        [Required]
+        //[Required]
         public string City { get; set; }
-        [Required]
+        //[Required]
         public string State { get; set; }
-        [Required]
+        //[Required]
         public string Country { get; set; }
         public double Latitude { get; set; }
         public double Longitude { get; set; }
